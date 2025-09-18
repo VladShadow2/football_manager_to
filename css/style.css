@@ -1,0 +1,178 @@
+html {
+font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: arial;
+    background: url(/img/ball.png) no-repeat right bottom, radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
+}
+
+.wraper {
+    padding: 0 10rem;
+}
+
+.header {
+    display: flex;
+    padding: 1.9rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+}
+
+
+.header nav {
+
+    padding: 1.5rem 5.7rem;
+    border-radius: 7rem;
+    background-color: #acacaa4e;
+
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-gap: 3rem;
+}
+
+.header a {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.header-logo-text p {
+    text-align: right;
+    margin: 0;
+}
+
+.first-word {
+    font-size: 2.3rem;
+    color: #ffffff;
+}
+
+.last-word {
+    font-size: 2rem;
+    color: #f4d633;
+}
+
+.logo-ball {
+    max-width: 3.3rem;
+}
+
+.phone {
+    column-gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.phone a {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.main {
+    padding: 15.3rem 0 13rem 0;
+}
+
+.section {
+    display: grid;
+    max-width: 69.2rem;
+    row-gap: 1.6rem;
+}
+
+.section p {
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-style: italic;
+    margin: 0;
+}
+
+.section h1 {
+    width: 45vw;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+}
+
+.section span {
+    font-size: 3rem;
+    color: #ffffff;
+    padding-bottom: 2.5rem;
+}
+
+
+.article button {
+    padding: 2.9rem 4.2rem;
+    border-radius: 7.5rem;
+    border: 0.3rem solid #f4d633;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #f4d633;
+    font-weight: bold;
+    background-color: #1d3b6e00;
+}
+
+.status-reputation {
+    display: flex;
+    column-gap: 0.8rem;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 3.2rem;
+    flex-wrap: wrap;
+}
+
+.status-reputation p {
+    margin: 0;
+}
+
+.footer {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f4d633;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.footer p {
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    color: #1e3c6f;
+    font-weight: bold;
+}
+
+.first-word-footer {
+    font-size: 2.3rem;
+    color: #1e3c6f;
+}
+
+.last-word-footer {
+    font-size: 2rem;
+    color: #1e3c6f;
+}
+
+@media screen and (min-width:768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
