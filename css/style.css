@@ -6,28 +6,26 @@ body {
     margin: 0;
     font-family: arial;
     background: url(../img/ball.png) no-repeat right bottom, radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
-}
-
-.wraper {
+    background-size: 290px;
 
 }
+
 
 .header {
-    display: flex;
+    display: grid;
     padding: 19rem 0;
     justify-content: center;
-    flex-wrap: wrap;
     row-gap: 15rem;
-  align-items: center;
+    align-items: center;
 }
 
 
 .header nav {
-
+    display: flex;
     padding: 15rem 50rem;
     border-radius: 70px;
     background-color: #acacaa4e;
-
+    justify-content: center;
 }
 
 .header ul {
@@ -61,6 +59,8 @@ body {
 
 .logo {
     display: flex;
+    justify-content: center;
+    padding-right: 10px;
     column-gap: 10rem;
     align-items: center;
 }
@@ -91,10 +91,12 @@ body {
 }
 
 .phone {
+    padding-left: 15px;
     column-gap: 10rem;
     display: flex;
     align-items: center;
     transition: all 1s ease;
+    justify-content: center;
 }
 
 .phone:hover {
@@ -113,7 +115,7 @@ body {
 }
 
 .main {
-    padding: 153rem 0 130rem 0;
+    padding: 153rem 0 430rem 0;
 }
 
 .section {
@@ -182,6 +184,7 @@ body {
 
 .footer {
     max-width: 100%;
+    padding: 10px 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -222,9 +225,16 @@ body {
     text-transform: lowercase;
 }
 
+@media screen and (min-width:401px) {
+    .footer {
+        justify-content: space-between;
+    }
+}
+
+
 
 @media screen and (min-width:700px) {
-    html{
+    html {
         font-size: 1px;
     }
 
@@ -232,9 +242,9 @@ body {
         padding: 0 100px;
     }
 
-    .header {
-        display: flex;
-        justify-content: space-between;
+
+    .main {
+        padding: 153rem 0 130rem 0;
     }
 
     .section h1 {
@@ -242,6 +252,22 @@ body {
     }
 
     .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:900px) {
+    body {
+        margin: 0;
+        font-family: arial;
+        background: url(../img/ball.png) no-repeat right bottom, radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
+    }
+}
+
+@media screen and (min-width:980px) {
+
+    .header {
         display: flex;
         justify-content: space-between;
     }
